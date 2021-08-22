@@ -54,4 +54,50 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 
+  <ThingDef ParentName="ResourceBase">
+    <defName>Voidweave</defName>
+    <label>voidweave</label>
+    <description>Voidplas-impregnated Hyperweave is used by the legion to produce high-end clothing and armour.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(162,157,152)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <MarketValue>400</MarketValue>
+      <Mass>0.038</Mass>
+      <Beauty>300</Beauty>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0.001</DeteriorationRate>
+      <StuffPower_Armor_Sharp>8.00</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>8.00</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>8.00</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>30</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.10</commonality>
+      <color>(0,106,126)</color>
+      <statFactors>
+        <Flammability>0.1</Flammability>
+        <MaxHitPoints>10</MaxHitPoints>
+        <Beauty>30</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags><li>RewardStandardHighFreq</li></thingSetMakerTags>
+  </ThingDef>
+
 </Defs>
