@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>RoyalLegion</identifier>
+  <version>1.1.0</version>
+  <dependencies>
+    <li>HugsLib</li>
+  </dependencies>
+  <incompatibleWith />
+  <loadBefore>
+  </loadBefore>
+  <loadAfter>
+  </loadAfter>
+  <showCrossPromotions>true</showCrossPromotions>
+</Manifest>
