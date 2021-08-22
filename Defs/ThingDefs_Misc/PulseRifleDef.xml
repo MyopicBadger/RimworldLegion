@@ -448,4 +448,70 @@
             <li>ElectricSmelter</li>
         </recipeUsers>
     </RecipeDef>
+    <RecipeDef>
+        <defName>FabricateVIW</defName>
+        <label>make Voidweave</label>
+        <description>Use advanced manufacturing techniques to create void impregnated hyperweave.</description>
+        <jobString>Making Voidweave.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>50</workAmount>
+        <products>
+            <Voidweave>10</Voidweave>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+    </RecipeDef>
+    <RecipeDef>
+        <defName>FabricateHealerSerum</defName>
+        <label>make Healer Serum</label>
+        <description>Use advanced manufacturing techniques to create healer mech serums.</description>
+        <jobString>Making healer serum.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>50</workAmount>
+        <products>
+            <MechSerumHealer>1</MechSerumHealer>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+    </RecipeDef>
+     <RecipeDef>
+        <defName>FabricateResurrectorSerum</defName>
+        <label>make Resurrector Serum</label>
+        <description>Use advanced manufacturing techniques to create resurrector mech serums.</description>
+        <jobString>Making resurrector serum.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>50</workAmount>
+        <products>
+            <MechSerumResurrector>1</MechSerumResurrector>
+        </products>
+        <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+    </RecipeDef>
 </Defs>
