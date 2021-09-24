@@ -691,6 +691,13 @@
             <stoppingPower>30</stoppingPower>
             <speed>200</speed>
         </projectile>
+        <thingClass>RoyalLegion.Projectile_HediffBullet</thingClass>
+        <modExtensions>
+            <li Class="RoyalLegion.ModExtension_HediffBullet">
+                <addHediffChance>0.5</addHediffChance>
+                <hediffToAdd>PsychicShock</hediffToAdd>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="ApparelNoQualityBase">

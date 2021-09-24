@@ -1,0 +1,4 @@
+D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RoyalLegion\Source\RoyalLegion\ClassLibrary1\obj\Debug\RoyalLegion.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RoyalLegion\Assemblies\RoyalLegion.dll.config
+D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RoyalLegion\Assemblies\RoyalLegion.dll
+D:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RoyalLegion\Source\RoyalLegion\ClassLibrary1\obj\Debug\RoyalLegion.dll

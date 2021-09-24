@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<HediffBullet_FailureMote>Failure: {0} chance</HediffBullet_FailureMote>
+	<HediffBullet_SuccessMessage>{0} stunned {1}!</HediffBullet_SuccessMessage>
+</LanguageData>
