@@ -135,7 +135,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Graeme_Bullet_PhasedPulse</defaultProjectile>
+                <defaultProjectile>Graeme_Bullet_PhasedPulseRifle</defaultProjectile>
                 <warmupTime>0.20</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -253,7 +253,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>20</workAmount>
         <products>
-            <Plasteel>100</Plasteel>
+            <Plasteel>1000</Plasteel>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -276,7 +276,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>10</workAmount>
         <products>
-            <Steel>100</Steel>
+            <Steel>1000</Steel>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -299,7 +299,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>10</workAmount>
         <products>
-            <Neutroamine>100</Neutroamine>
+            <Neutroamine>1000</Neutroamine>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -322,7 +322,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>20</workAmount>
         <products>
-            <Gold>100</Gold>
+            <Gold>1000</Gold>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -345,7 +345,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>20</workAmount>
         <products>
-            <Silver>100</Silver>
+            <Silver>1000</Silver>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -368,7 +368,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>30</workAmount>
         <products>
-            <Uranium>100</Uranium>
+            <Uranium>1000</Uranium>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -391,7 +391,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>50</workAmount>
         <products>
-            <Hyperweave>100</Hyperweave>
+            <Hyperweave>1000</Hyperweave>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -414,7 +414,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>50</workAmount>
         <products>
-            <MedicineUltratech>1</MedicineUltratech>
+            <MedicineUltratech>10</MedicineUltratech>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -436,7 +436,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>50</workAmount>
         <products>
-            <Void-hardened_Plasteel>10</Void-hardened_Plasteel>
+            <Void-hardened_Plasteel>100</Void-hardened_Plasteel>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -458,7 +458,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>50</workAmount>
         <products>
-            <Voidweave>10</Voidweave>
+            <Voidweave>100</Voidweave>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -480,7 +480,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>50</workAmount>
         <products>
-            <MechSerumHealer>1</MechSerumHealer>
+            <MechSerumHealer>10</MechSerumHealer>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -492,7 +492,7 @@
             <li>ElectricSmelter</li>
         </recipeUsers>
     </RecipeDef>
-     <RecipeDef>
+    <RecipeDef>
         <defName>FabricateResurrectorSerum</defName>
         <label>make Resurrector Serum</label>
         <description>Use advanced manufacturing techniques to create resurrector mech serums.</description>
@@ -502,7 +502,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>50</workAmount>
         <products>
-            <MechSerumResurrector>1</MechSerumResurrector>
+            <MechSerumResurrector>10</MechSerumResurrector>
         </products>
         <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
         <skillRequirements>
@@ -514,4 +514,268 @@
             <li>ElectricSmelter</li>
         </recipeUsers>
     </RecipeDef>
+
+    <ThingDef ParentName="BaseMakeableGrenade">
+        <defName>Weapon_GrenadeFoam</defName>
+        <label>foam grenades</label>
+        <description>Firefoam grenades sprays a fire-retardant foam in a circular field around itself.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/EMPGrenades</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+            <WorkToMake>24000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+        </recipeMaker>
+        <weaponTags>
+            <li>GrenadeFOAM</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Grenades</li>
+        </thingCategories>
+        <verbs>
+            <li>
+                <label>throw foam grenade</label>
+                <verbClass>Verb_LaunchProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>12.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>1.5</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>Proj_GrenadeFOAM</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>9.9</explosiveRadius>
+                <explosiveDamageType>Extinguish</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+                <postExplosionSpawnChance>1</postExplosionSpawnChance>
+                <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+                <explosionEffect>ExtinguisherExplosion</explosionEffect>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Steel>10</Steel>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>Proj_GrenadeFOAM</defName>
+        <label>Foam grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/GrenadeEMP</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>9.9</explosionRadius>
+            <damageDef>Extinguish</damageDef>
+            <flyOverhead>true</flyOverhead>
+            <!-- Use default damage from explosion def -->
+            <explosionDelay>10</explosionDelay>
+            <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+            <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+            <explosionEffect>ExtinguisherExplosion</explosionEffect>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>Graeme_Gun_PhasedStunRifle</defName>
+        <label>stun rifle</label>
+        <description>A stun-shot assault rifle. Using advanced psychic technology, the Legion uses these weapons when they need to take prisoners</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>1</AccuracyShort>
+            <AccuracyMedium>0.95</AccuracyMedium>
+            <AccuracyLong>0.90</AccuracyLong>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Plasteel>50</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Graeme_Bullet_PhasedStun</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>25.9</range>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Graeme_Bullet_PhasedStun</defName>
+        <label>phased stun shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Stun</damageDef>
+            <damageAmountBase>100</damageAmountBase>
+            <stoppingPower>30</stoppingPower>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>GraemeApparel_PsychicShockLance</defName>
+        <label>Enhanced Shock Lance</label>
+        <description>An enhanced psychic effector. It shocks the target's mind with chaotic images, blocking coherent perception and dropping him into a state of psychic shock. There is a risk of brain damage. It has a long range, but requires line of sight.</description>
+        <graphicData>
+            <texPath>Things/Item/Artifact/PsychicShockLance</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Archotech</techLevel>
+        <tradeTags>
+            <li>Artifact</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+        <statBases>
+            <Mass>0.5</Mass>
+            <EquipDelay>2</EquipDelay>
+            <MarketValue>5500</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <scoreOffset>4</scoreOffset>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <ignoredByNonViolent>true</ignoredByNonViolent>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+        </apparel>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <tradeNeverStack>true</tradeNeverStack>
+        <smeltable>false</smeltable>
+        <burnableByRecipe>false</burnableByRecipe>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <relicChance>3</relicChance>
+        <verbs>
+            <li>
+                <verbClass>Verb_CastTargetEffect</verbClass>
+                <label>psychic shock lance</label>
+                <hasStandardCommand>true</hasStandardCommand>
+                <targetable>true</targetable>
+                <onlyManualCast>False</onlyManualCast>
+                <range>120</range>
+                <warmupTime>0.5</warmupTime>
+                <targetParams>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+                    <neverTargetIncapacitated>true</neverTargetIncapacitated>
+                </targetParams>
+                <soundCast>PsychicShockLanceCast</soundCast>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Reloadable">
+                <maxCharges>20</maxCharges>
+                <destroyOnEmpty>true</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>charge</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+            <li>
+                <compClass>CompTargetEffect_PsychicShock</compClass>
+            </li>
+            <li Class="CompProperties_TargetEffect_BrainDamageChance">
+                <brainDamageChance>0.1</brainDamageChance>
+            </li>
+            <li Class="CompProperties_TargetEffect_FleckOnTarget">
+                <fleckDef>PsycastPsychicEffect</fleckDef>
+            </li>
+            <li Class="CompProperties_TargetEffect_FleckConnecting">
+                <fleckDef>PsycastPsychicLine</fleckDef>
+            </li>
+            <li Class="CompProperties_Styleable"></li>
+        </comps>
+    </ThingDef>
 </Defs>
